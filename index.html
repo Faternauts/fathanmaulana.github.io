@@ -563,64 +563,84 @@
       </div>
     </section>
    
-    <!-- Forms-->
-    <section class="bg-light">
-      <div class="container py-5">
-        <h2 class="text-center text-primary mb-4">Connect with Us!</h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-6 col-md-8 col-sm-10">
-            <div class="card shadow-lg border-primary">
-              <div class="card-header bg-primary text-white text-center">
-                <h4>Sign Up</h4>
+   <!-- Forms -->
+<section class="bg-light">
+  <div class="container py-5">
+    <h2 class="text-center text-primary mb-4">Connect with Us!</h2>
+    <div class="row justify-content-center">
+      <!-- Form Column (Left) -->
+      <div class="col-lg-6 col-md-8 col-sm-10">
+        <div class="card shadow-lg border-primary">
+          <div class="card-header bg-primary text-white text-center">
+            <h4>Sign Up</h4>
+          </div>
+          <div class="card-body">
+            <form onsubmit="return validateForm()">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
               </div>
-              <div class="card-body">
-                <form onsubmit="return validateForm()">
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Enter your name"
-                      required
-                    />
-                  </div>
-    
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Enter your email"
-                      required
-                    />
-                  </div>
-    
-                  <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="phone"
-                      name="phone"
-                      placeholder="Enter your phone number"
-                      required
-                    />
-                  </div>
-    
-                  <button type="submit" class="btn btn-primary btn-block w-100">
-                    Submit
-                  </button>
-                </form>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
               </div>
-            </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block w-100">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Description and Image Column (Right) -->
+      <div class="col-lg-6">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+          <!-- Description Text -->
+          <p class="text-muted text-center mb-4" style="font-size: 1.1rem;">
+            We’re excited to have you onboard! Sign up to stay updated on the latest deals and offers. Join the LingCars family and start leasing your dream car today.
+          </p>
+
+          <!-- Image -->
+          <img
+            src="https://cms.motorcomplete.co.uk/media/1dtiojwj/lings-logo.png"
+            alt="Car Image"
+            class="img-fluid rounded"
+            style="max-width: 100%;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     
 <!-- Footer-->
 <footer class="footer text-center">
